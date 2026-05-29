@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0: #E7E393;
+    --cor1: #F4C95D;
+    --cor2: #B7642E;
+    --cor3: #4b1f0c;
+    --cor4: #211103;
+    --cor5: #0C120C;
+}
+
+header {
+    position: relative;
+    height: 400px;
+    background-color: var(--cor3);
+    background-image: url(imagens/comida.jpg);
+    background-size: cover;
+}
+
+header > img {
+    width: 50px;
+    margin: 10px;
+}
+
+header > article {
+    max-width: 600px;
+    min-width: 300px;
+    background-color: var(--cor3);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid var(--cor0);
+    border-radius: 15px;
+}
+
+header h1 {
+    color: var(--cor0);
+    font-size: 3em;
+    padding: 25px;
+}
+header p {
+    color: var(--cor0);
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--cor0);
+    text-decoration: none;
+    padding: 11px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: var(--cor3);
+    background-color: var(--cor1);
+    transition: 0.5s;
+}
+
+main {
+    background-color: var(--cor3);
+    padding: 10px;
+}
+
+main article {
+    max-width: 800px;
+    color: var(--cor0);
+}
+main article img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main h2 {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--cor5);
+    margin-top: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+main h1 {
+    display: inline-block;
+    color: var(--cor3);
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+
+}
