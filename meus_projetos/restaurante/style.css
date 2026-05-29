@@ -74,6 +74,8 @@ main {
 main article {
     max-width: 800px;
     color: var(--cor0);
+    display: block;
+    margin: auto;
 }
 main article img {
     display: block;
