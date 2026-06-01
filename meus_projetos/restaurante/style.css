@@ -50,6 +50,7 @@ header > article {
 header h1 {
     color: var(--cor0);
     font-size: 3em;
+    font-weight: bolder;
     padding: 25px;
     font-family: var(--fonte_especial);
 }
