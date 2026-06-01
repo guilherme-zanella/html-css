@@ -76,6 +76,11 @@ nav a:hover {
     transition: 0.5s;
 }
 
+nav a:active {
+    color: var(--cor3);
+    background-color: var(--cor1);
+}
+
 main {
     background-color: var(--cor3);
     padding: 10px;
