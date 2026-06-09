@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+:root {
+    --cor01: #BAF266;
+    --cor02: #0F9FBF;
+    --cor03: #2585D9;
+    --cor04: #3841eb;
+    --cor05: #0511F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height: 200px;
+
+    background-color: var(--cor04);
+    background-image: url(imagens/logo.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center 20px;
+
+    padding: 10px;
+}
+
+header > article {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 2.2em;
+    color: var(--cor01);
+    font-variant: small-caps;
+}
+
+header p {
+    font-weight: 800;
+    color: var(--cor02);
+}
+
+body {
+    background-color: #67a0d3;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+main h2 {
+    background-color: var(--cor02);
+    padding: 5px;
+    font-size: 2em;
+}
+
+main p {
+    font-size: 1.5em;
+    padding: 5px;
+    padding-bottom: 15px;
+    text-indent: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+section.imagem {
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.205);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    width: 40vw;
+    padding: 10px;
+    font-size: 1.7em;
+    background-color: rgba(0, 0, 0, 0.637);
+    color: white;
+}
+
+section#santorini {
+    background-image: url(imagens/santorini-grecia.jpg);
+}
+
+section#alpes {
+    background-image: url(imagens/alpes-suicos.jpg);
+}
+
+section#saara {
+    background-image: url(imagens/deserto-saara.avif);
+}
+
+section#noronha {
+    background-image: url(imagens/fernando-de-noronha.jpg);
+}
+
+section#kyoto {
+    background-image: url(imagens/kyoto.webp);
+}
+
+section#aurora {
+    background-image: url(imagens/aurora-boreal.jpg);
+}
+
+section#peru {
+    background-image: url(imagens/machu-picchu.jpg);
+}
+
+footer {
+    font-weight: 800;
+    font-size: 1.2em;
+    background-color: var(--cor04);
+    color: var(--cor01);
+    padding: 10px;
+}
