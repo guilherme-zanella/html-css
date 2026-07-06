@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="id_nome">Nome: </label>
+            <input type="text" name="nome" id="id_nome" required oninput="id_boas_vindas.value = this.value + '!'">
+        </p>
+        <p>
+            <label for="id_boas_vindas">Seja bem vindo, </label>
+            <output id="id_boas_vindas"></output>
+        </p>
+    </form>
+</body>
+</html>
