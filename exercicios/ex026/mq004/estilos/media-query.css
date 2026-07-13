@@ -2,6 +2,76 @@
 
 /* Todas as demais mídias */
 
+/* Typical Device Breakpoint
+celular: até 576px
+tablet: de 577px até 768px
+Notebook: de 769px até 992px
+Desktop: de 993px até 1200
+TV: maior que 1201px */
+
 @media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /* desnecessário */
+    }
+
+    main {
+        text-shadow: none;
+        color: black;
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main::after {
+        content: 'Essa impressão foi feita através de um site sobre Media Query' ;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 577px) { /* Tablets */
+    body {
+       background-image: url(../imagens/back-tablet.jpg); 
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: block;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 769px) { /* pc */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
     
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: block;}
+    img#tv { display: none;}
+}
+
+@media screen and (min-width: 1201px) { /* TV */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: block;}
 }
