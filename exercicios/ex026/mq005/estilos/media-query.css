@@ -20,6 +20,10 @@ TV: maior que 1201px */
         display: inline-block;
     }
 
+    menu a {
+        border-radius: 5px;
+    }
+
     main {
         max-width: 700px;
     }
