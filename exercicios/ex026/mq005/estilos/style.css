@@ -26,8 +26,23 @@ header h1 {
     text-shadow: 1px 1px 1px black;
 }
 
-menu {
+span#hamburguer {
     display: block;
+    background-color: rgb(63, 63, 63);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+span#hamburguer:hover {
+    background-color: rgb(241, 241, 241);
+    color: black;
+}
+
+menu {
+    display: none;
 }
 
 menu ul {
