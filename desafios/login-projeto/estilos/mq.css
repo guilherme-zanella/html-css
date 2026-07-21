@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* Typical Device Breakpoint
+celular: até 576px
+tablet: de 577px até 768px
+Notebook: de 769px até 992px
+Desktop: de 993px até 1200
+TV: maior que 1201px */
+
+:root {
+    --cor1: #5F2C82; 
+    --cor2: #4B949A;
+    --cor3: #2D6462;
+}
+
+@media screen and (min-width: 577px) {
+    body {
+        background: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    }
+
+    main {
+        display: flex;
+        width: 95vw;
+        height: 300px;
+        translate: -50% -50%;
+    }
+
+    main img {
+        width: 200px;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 90vw;
+        max-width: 850px;
+    }
+
+    main img {
+        width: 50%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
