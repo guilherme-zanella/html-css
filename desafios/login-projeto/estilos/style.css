@@ -51,7 +51,7 @@ article > p {
 }
 
 article > form > p {
-    padding: 5px;
+    padding: 3px 5px;
     border-radius: 10px;
 }
 
@@ -71,6 +71,8 @@ input.preencher {
     border-radius: 5px;
     background-color: rgb(175, 175, 235);
     color: white;
+    width: 100%;
+    padding: 10px
 }
 
 input.preencher:focus {
