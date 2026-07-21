@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+:root {
+    --cor1: #5F2C82; 
+    --cor2: #4B949A;
+    --cor3: #2D6462;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: var(--cor1);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% 10%;
+    width: 250px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+main img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+article {
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+article h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+article > p {
+    padding-bottom: 10px;
+    font-size: 0.8em;
+}
+
+article > form > p {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+}
+
+input.envios {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+input.preencher {
+    border-radius: 5px;
+    background-color: rgb(175, 175, 235);
+    color: white;
+}
+
+input.preencher:focus {
+    background-color: white;
+    color: black;
+}
+
+input::placeholder {
+    padding: 10px;
+    font-weight: 600;
+}
+
+article form p.destaque {
+    background-color: var(--cor1);
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.material-symbols-outlined {
+    color: white;
+    margin-right: 5px;
+}
+
+input#enviar {
+    background-color: var(--cor2);
+}
+
+input#enviar:hover {
+    background-color: var(--cor3);
+}
+
+input#esqueci_senha {
+    border: 1px solid var(--cor2);
+    color: var(--cor2);
+}
+
+input#esqueci_senha:hover {
+     background-color: rgb(175, 175, 235);
+}
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Teste</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <img src="predio.jpg" alt="Imagem de um prédio">
+        <article>
+            <h1>Login</h1>
+            <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+            <form action="cadastro.py" method="get" autocomplete="on">
+                <p class="destaque">
+                    <span class="material-symbols-outlined">person</span>
+                    <input class="preencher" type="email" name="email" id="iemail" autocomplete="email" placeholder="seu e-mail" required>
+                </p>
+                <p class="destaque">
+                    <span class="material-symbols-outlined">key</span>
+                    <input class="preencher" type="password" name="senha" id="isenha" placeholder="sua senha" required min="8" max="16">
+                </p>
+                <p>
+                    <input class="envios" id="enviar" type="submit" value="Entrar">
+                </p>
+                <p>
+                    <input class="envios" id="esqueci_senha" type="submit" value="Esqueci a senha ✉">
+                </p>
+            </form>
+        </article>
+    </main>
+</body>
+</html>
