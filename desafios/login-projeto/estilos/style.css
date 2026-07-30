@@ -63,7 +63,7 @@ input {
     border: 0;
 }
 
-input.envios {
+.envios {
     padding: 10px;
     cursor: pointer;
     font-weight: 700;
@@ -108,12 +108,16 @@ input#enviar:hover {
     background-color: var(--cor3);
 }
 
-input#esqueci_senha {
+a#esqueci_senha {
+    display: block;
     border: 1px solid var(--cor2);
     color: var(--cor2);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
 }
 
-input#esqueci_senha:hover {
+a#esqueci_senha:hover {
      background-color: rgb(175, 175, 235);
 }
 

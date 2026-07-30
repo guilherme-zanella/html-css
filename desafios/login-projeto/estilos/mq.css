@@ -21,18 +21,23 @@ TV: maior que 1201px */
     main {
         display: flex;
         width: 95vw;
+        max-width: 700px;
         height: 300px;
         translate: -50% -50%;
     }
 
     main img {
-        width: 200px;
+        width: 30%;
         height: 100%;
         border-radius: 20px 0px 0px 20px;
     }
+
+    main article {
+        width: 70%;
+    }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 993px) {
     main {
         display: flex;
         flex-direction: row-reverse;
@@ -43,5 +48,9 @@ TV: maior que 1201px */
     main img {
         width: 50%;
         border-radius: 0px 20px 20px 0px;
+    }
+
+    main article {
+        width: 50%;
     }
 }
