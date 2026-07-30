@@ -23,7 +23,6 @@ TV: maior que 1201px */
         width: 95vw;
         max-width: 700px;
         height: 300px;
-        translate: -50% -50%;
     }
 
     main img {
@@ -39,7 +38,6 @@ TV: maior que 1201px */
 
 @media screen and (min-width: 993px) {
     main {
-        display: flex;
         flex-direction: row-reverse;
         width: 90vw;
         max-width: 850px;
