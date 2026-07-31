@@ -79,7 +79,5 @@ div.media iframe {
 }
 
 div#video {
-    
     aspect-ratio: 16 / 9;
-    height: auto;
 }
