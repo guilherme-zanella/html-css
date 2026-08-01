@@ -83,7 +83,12 @@ div#video {
 }
 
 @media screen and (max-width: 400px) {
-    div.media {
+    div.media img {
         flex: 1 1 400px;
+    }
+
+    div.media iframe {
+        width: 100%;
+        height: auto;
     }
 }
