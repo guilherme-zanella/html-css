@@ -32,6 +32,7 @@ header h1 {
     margin-bottom: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
     font-weight: 900;
+    line-height: 1.2em;
 }
 
 header p {
@@ -60,19 +61,22 @@ article.text-media {
 }
 
 article div.media {
-    flex: 1 0 400px;
+    flex: 1 1 400px;
 }
 
 article div.text {
     flex: 1 1 500px;
 }
 
-div.media img, iframe {
+div.media img {
     display: block;
     margin: auto;
+    width: 90%;
 }
 
 div.media iframe {
+    display: block;
+    margin: auto;
     width: 90%;
     height: 90%;
     object-fit: cover;
@@ -82,13 +86,8 @@ div#video {
     aspect-ratio: 16 / 9;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
     div.media img {
-        flex: 1 1 400px;
-    }
-
-    div.media iframe {
         width: 100%;
-        height: auto;
     }
 }
