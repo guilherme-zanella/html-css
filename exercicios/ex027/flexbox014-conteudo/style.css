@@ -81,3 +81,9 @@ div.media iframe {
 div#video {
     aspect-ratio: 16 / 9;
 }
+
+@media screen and (max-width: 400px) {
+    div.media {
+        flex: 1 1 400px;
+    }
+}
